@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { useEffect, useState } from 'react';
-import GlobalAPI from '../Services/GlobalAPI';
+// import GlobalAPI from '../Services/GlobalAPI';
+import GlobalAPI from '../Services/GlobalAPI/';
 const imageBaseUrl=import.meta.env.VITE_IMAGE_BASE_URL;
 import { HiChevronRight,HiChevronLeft } from 'react-icons/hi2';
 const screenWidth=window.innerWidth
@@ -12,8 +13,8 @@ function Slider() {
     }, []);
     const getTrendingMovie = () => {
         GlobalAPI.getTrendingVideos.then(respone => {
-            console.log(imageBaseUrl);
-            console.log(respone.data.results);
+            // console.log(imageBaseUrl);
+            // console.log(respone.data.results);
             setMovieList(respone.data.results);
         })
     }
