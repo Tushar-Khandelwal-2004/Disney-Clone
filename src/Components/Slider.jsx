@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { useEffect, useState } from 'react';
 // import GlobalAPI from '../Services/GlobalAPI';
-import GlobalAPI from '../Services/GlobalAPI/';
+import GlobalAPI from '../Services/GlobalAPI';
 const imageBaseUrl=import.meta.env.VITE_IMAGE_BASE_URL;
 import { HiChevronRight,HiChevronLeft } from 'react-icons/hi2';
 const screenWidth=window.innerWidth
